@@ -1,0 +1,18 @@
+{
+  "name": "sunrise-app",
+  "version": "1.0.0",
+  "description": "Sunrise and sunset app",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "node app.js"
+  },
+  "author": "Stefania",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "eslint": "^7.4.0",
+    "moment": "^2.27.0",
+    "node-fetch": "^2.6.0"
+  }
+}
