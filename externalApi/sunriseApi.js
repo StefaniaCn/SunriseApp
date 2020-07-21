@@ -18,8 +18,12 @@ function getSunriseSunset(item) {
 		.then(checkStatus)
 		.then(response => {
 			return response.json();
-		})
-		.catch(err => {
+		}).then(responseJson =>{
+			// Add lat, lng to the result obj and return it
+			responseJson.results.lat = item.lat;
+			responseJson.results.lng = item.lng;
+			return responseJson;
+		}).catch(err => {
 			// Throw the error to stop Promise.map early if there
 			// is a problem with the API
 			throw err;

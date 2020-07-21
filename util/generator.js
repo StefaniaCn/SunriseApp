@@ -18,7 +18,7 @@ function generateRandLatLng(itemsNo) {
 	}
 	const obj = {
 		lat: generateRandomInRange(-90, 90, 3),
-		lng: generateRandomInRange(-180, 180, 3),
+		lng: generateRandomInRange(-180, 180, 3)
 	};
 	return [].concat(obj, generateRandLatLng(itemsNo - 1));
 };
